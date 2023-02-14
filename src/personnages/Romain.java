@@ -1,4 +1,5 @@
 package personnages;
+import java.util.*;
 
 public class Romain {
 	private String nom;
@@ -39,6 +40,7 @@ public class Romain {
 
 public class Druide {
 	private String nom;
+	private int forcePotion;
 	private int effetPotionMin;
 	private int effetPotionMax;
 	
@@ -61,5 +63,10 @@ public class Druide {
 	
 	private String prendreParole() {
 		return "Le druide " + nom + " : ";
+	}
+	
+	private preparerPotion() {
+		Random random;
+		random.nextInt(effetPotionMax);
 	}
 }
